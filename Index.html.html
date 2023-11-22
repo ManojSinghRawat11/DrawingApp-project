@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="DrawingApp.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="tools">
+            <div class="tool">
+                <div class="tool-img active-tool" id="pencil">
+                    <img src="./Amenities/pencil.png" alt="" srcset="">
+                </div>
+                <div class="tool-options" id="pencil-options">
+                    <div class="pencil-slider">
+                        <input type="range" name="" id="pencil-slider" min="1" max="30" value="1">
+                    </div>
+                    <div class="pencil-color">
+                        <div class="black"></div>
+                        <div class="red"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tool">
+                <div class="tool-img" id="eraser">
+                    <img src="./Amenities/eraser.png" alt="" srcset="">
+                </div>
+                <div class="tool-options" id="eraser-options">
+                    <div class="eraser-slider">
+                        <input type="range" name="" id="eraser-slider" min="1" max="30" value="1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool" id="sticky">
+                <img src="./Amenities/note.png" alt="">
+            </div>
+
+            <div class="tool" id="upload">
+                <label for="img-upload">
+                <img src="./Amenities/upload.png" alt="">
+                <input type="file" name="" id="img-upload" style="display: none;">
+            </label>
+            </div>
+            
+            <div class="tool" id="download">
+                <img src="./Amenities/download.png" alt="" srcset="">
+            </div>
+
+            <div class="tool" id="undo">
+                <img src="./Amenities/undo.png" alt="" srcset="">
+            </div>
+
+            <div class="tool" id="redo">
+                <img src="./Amenities/redo.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <div class="content">
+        <canvas id="canvas" class="canvas">
+
+        </canvas>
+    </div>
+</body>
+<script src="DrawingApp.js"></script>
+<script src="DrawingApp.tools.js"></script>
+<script src="sticky.js"></script>
+<script src="img.js"></script>
+</html>

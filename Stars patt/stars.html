@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starPattern</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let n=5;
+    // let starPatt = "";
+    // let count =1;
+
+    // for (let row=1;row<=n;row++){
+    //     for(let stars = 1; stars<=row; stars++){
+    //         starPatt+=count + " ";
+    //         count++;
+    //     }
+    //     starPatt += "\n"; //move to new line
+    // }
+     
+    // console.log(starPatt);
+
+
+    let n=5;
+    let starPatt = "";
+    //let count =1;
+
+    for (let row=1;row<=n;row++){
+        for(let stars = 1; stars<=6-row; stars++){
+            starPatt+=stars + " ";
+
+        }
+        starPatt += "\n"; //move to new line
+    }
+     
+    console.log(starPatt);
+
+</script>
+</html>
+
